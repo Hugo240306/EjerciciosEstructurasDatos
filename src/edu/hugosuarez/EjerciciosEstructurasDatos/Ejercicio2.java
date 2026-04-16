@@ -17,5 +17,13 @@ public class Ejercicio2 {
         System.out.println("Se han almacenado " + numeros.length + " números" );
         System.out.println(" La suma de todos los números es : " + (numeros[0]+numeros[1]+numeros[2]+numeros[3]+numeros[4]));
 
+        int mayor = numeros[0];
+        for (int i = 0; i < numeros.length; i++) {
+            if (numeros[i] > mayor) {
+                mayor = numeros[i];
+            }
+        }
+
+        System.out.println("El número más grande es: " + mayor);
     }
 }
